@@ -1,0 +1,12 @@
+<form method="POST">
+    {%csrf_token%}
+    <table cellspacing="10" border="1">
+        {{form.as_table}}
+        <tr>
+            <td><input type="submit" value="Submit"></td>
+            <td><input type="reset" value="reset"></td>
+        </tr>
+    </table>
+
+
+</form>

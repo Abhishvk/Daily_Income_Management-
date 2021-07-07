@@ -1,0 +1,17 @@
+<h1> Daily Income Expense Management</h1>
+<h2><a href="/">Home</a></h2>
+
+{% if user.is_authenticated %}
+<h2><a href="">Edit-Profile</a></h2>
+<h2><a href="{% url 'income:addincome'%}">Add Income</a></h2>
+<h2><a href="{% url 'expense:addexpense'%}">Add Expense</a></h2>
+<h2><a href="">Income List</a></h2>
+<h2><a href="">Expense List</a></h2>
+<h2><a href="{% url 'accounts:logout'%}">LogOut</a></h2>
+{%else%}
+
+<h2><a href="{% url 'accounts:reg'%}">Register</a></h2>
+<h2><a href="{% url 'accounts:login'%}">Login</a></h2>
+
+{%endif%}
+<h2><a href="">About Us</a></h2>
